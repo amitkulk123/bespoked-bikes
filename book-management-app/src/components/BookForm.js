@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const BookForm = (props) => {
   const [book, setBook] = useState({
+    booktype: props.book ? props.book.bookname : '',
     bookname: props.book ? props.book.bookname : '',
     author: props.book ? props.book.author : '',
     quantity: props.book ? props.book.quantity : '',
@@ -12,11 +13,11 @@ const BookForm = (props) => {
   });
 
   const [errorMsg, setErrorMsg] = useState('');
-  const { bookname, author, price, quantity } = book;
+  const { booktype, bookname, author, price, quantity } = book;
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    const values = [bookname, author, price, quantity];
+    const values = [booktype, bookname, author, price, quantity];
     let errorMsg = '';
 
     const allFieldsFilled = values.every((field) => {
@@ -27,6 +28,7 @@ const BookForm = (props) => {
     if (allFieldsFilled) {
       const book = {
         id: uuidv4(),
+        booktype,
         bookname,
         author,
         price,
@@ -71,6 +73,31 @@ const BookForm = (props) => {
     <div className="main-form">
       {errorMsg && <p className="errorMsg">{errorMsg}</p>}
       <Form onSubmit={handleOnSubmit}>
+        <Form.Group controlId="type">
+          <Form.Label>Type</Form.Label>
+          <Form.Control
+            // className="input-control"
+            type="radio"
+            name="booktype"
+            value={booktype}
+            name="Hello"
+            onChange={handleInputChange}
+          />
+          <Form.Control
+            // className="input-control"
+            type="radio"
+            name="booktype"
+            value={booktype}
+            onChange={handleInputChange}
+          />
+          <Form.Control
+            // className="input-control"
+            type="radio"
+            name="booktype"
+            value={booktype}
+            onChange={handleInputChange}
+          />
+        </Form.Group>
         <Form.Group controlId="name">
           <Form.Label>Book Name</Form.Label>
           <Form.Control

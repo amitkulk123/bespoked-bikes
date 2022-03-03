@@ -6,6 +6,9 @@ const Header = () => {
         <h1>BeSpoked Bikes</h1>
         <hr />
         <div className="links">
+          <NavLink to="/" className="link" activeClassName="active" exact>
+            All
+          </NavLink>
           <NavLink to="/salesperson" className="link" activeClassName="active" exact>
             SalesPerson
           </NavLink>
