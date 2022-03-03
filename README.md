@@ -1,6 +1,6 @@
 # Getting Started with Bespokes-Bikes
 
-Bespoked Bikes is a web CRUD application that I created over two days. The app is able to read, update, and delete data much like a CRUD app.
+Bespoked Bikes is a web application that I created over two days. The app is able to read, update, and delete data much like a CRUD app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
