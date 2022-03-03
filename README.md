@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Getting Started with Bespokes-Bikes
+
+Bespoked Bikes is a web CRUD application that I created over two days. The app is able to read, update, and delete data much like a CRUD app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To start off, first clone the repo from the main branch. 
 
-In the project directory, you can run:
+Then run
+### `npm install`
+
+to install the required libraries. 
+
+In this project, I utilized Firebase sdk as my database so that read, update, and delete data. 
+
+After running npm install, 
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+to start running the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you run into any issues, try removing the **node_modules** folder and reinstalling it with npm install.
 
-### `npm test`
+Once the app is running, it should look something like this:
+![Dashboard](dashboard.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Limitations`
+Currently, I was only able to implement a couple of the features that were asked due to time limitations.
 
-### `npm run build`
+I was able to figure out how to successfully add, update, and delete a new salesPerson and product. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I could do the same for customers and sales if I had more time. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I also couldn't figure out how to find duplicate items through Firebase since it requires a specific get function that I was unable to run without errors
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In order to add a user, just fill out all the fields.
+In order to update a user, fill out the fields for the person/thing you want to update and then click "Edit User"
+Lastly, in order to delete, simply press the delete button
 
-### `npm run eject`
+**IMPORTANT** After every action, refresh the browser window since it sends a new request to firebase every time an action is done
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
